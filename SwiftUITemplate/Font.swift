@@ -120,7 +120,7 @@ struct FontView: View {
     }
 }
 
-struct Font_Previews: PreviewProvider {
+struct FontView_Previews: PreviewProvider {
     static var previews: some View {
         FontView()
     }

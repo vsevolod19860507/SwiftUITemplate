@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "customfont",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/vsevolod19860507/CustomFont",
+      "state" : {
+        "revision" : "e7642bcd7229aef809745a8ffc777ab3483e8c3b",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72F7C63829D8B17F00E2E07E /* CustomFont in Frameworks */ = {isa = PBXBuildFile; productRef = 72F7C63729D8B17F00E2E07E /* CustomFont */; };
 		72FA6C9929D81EB800747FEF /* SwiftUITemplateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FA6C9829D81EB800747FEF /* SwiftUITemplateApp.swift */; };
 		72FA6C9B29D81EB800747FEF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FA6C9A29D81EB800747FEF /* ContentView.swift */; };
 		72FA6C9D29D81EB800747FEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72FA6C9C29D81EB800747FEF /* Assets.xcassets */; };
 		72FA6CA029D81EB800747FEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72FA6C9F29D81EB800747FEF /* Preview Assets.xcassets */; };
-		72FA6CA729D81EE600747FEF /* FontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FA6CA629D81EE600747FEF /* FontView.swift */; };
 		72FA6CC029D81F1800747FEF /* DancingScript-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72FA6CAA29D81F1800747FEF /* DancingScript-Medium.ttf */; };
 		72FA6CC129D81F1800747FEF /* DancingScript-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72FA6CAB29D81F1800747FEF /* DancingScript-Regular.ttf */; };
 		72FA6CC229D81F1800747FEF /* DancingScript-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72FA6CAC29D81F1800747FEF /* DancingScript-SemiBold.ttf */; };
@@ -41,7 +41,6 @@
 		72FA6C9A29D81EB800747FEF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		72FA6C9C29D81EB800747FEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72FA6C9F29D81EB800747FEF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		72FA6CA629D81EE600747FEF /* FontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontView.swift; sourceTree = "<group>"; };
 		72FA6CAA29D81F1800747FEF /* DancingScript-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-Medium.ttf"; sourceTree = "<group>"; };
 		72FA6CAB29D81F1800747FEF /* DancingScript-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-Regular.ttf"; sourceTree = "<group>"; };
 		72FA6CAC29D81F1800747FEF /* DancingScript-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -71,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72F7C63829D8B17F00E2E07E /* CustomFont in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +99,6 @@
 				72FA6CD429D81F4300747FEF /* Info.plist */,
 				72FA6C9829D81EB800747FEF /* SwiftUITemplateApp.swift */,
 				72FA6C9A29D81EB800747FEF /* ContentView.swift */,
-				72FA6CA629D81EE600747FEF /* FontView.swift */,
 				72FA6CD529D8599C00747FEF /* Font.swift */,
 				72FA6C9C29D81EB800747FEF /* Assets.xcassets */,
 				72FA6CA829D81F1800747FEF /* Fonts */,
@@ -183,6 +182,9 @@
 			dependencies = (
 			);
 			name = SwiftUITemplate;
+			packageProductDependencies = (
+				72F7C63729D8B17F00E2E07E /* CustomFont */,
+			);
 			productName = SwiftUITemplate;
 			productReference = 72FA6C9529D81EB800747FEF /* SwiftUITemplate.app */;
 			productType = "com.apple.product-type.application";
@@ -211,6 +213,9 @@
 				Base,
 			);
 			mainGroup = 72FA6C8C29D81EB800747FEF;
+			packageReferences = (
+				72F7C63629D8B17F00E2E07E /* XCRemoteSwiftPackageReference "CustomFont" */,
+			);
 			productRefGroup = 72FA6C9629D81EB800747FEF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,7 +262,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72FA6CA729D81EE600747FEF /* FontView.swift in Sources */,
 				72FA6C9B29D81EB800747FEF /* ContentView.swift in Sources */,
 				72FA6CD629D8599C00747FEF /* Font.swift in Sources */,
 				72FA6C9929D81EB800747FEF /* SwiftUITemplateApp.swift in Sources */,
@@ -463,6 +467,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		72F7C63629D8B17F00E2E07E /* XCRemoteSwiftPackageReference "CustomFont" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vsevolod19860507/CustomFont";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		72F7C63729D8B17F00E2E07E /* CustomFont */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 72F7C63629D8B17F00E2E07E /* XCRemoteSwiftPackageReference "CustomFont" */;
+			productName = CustomFont;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 72FA6C8D29D81EB800747FEF /* Project object */;
 }

@@ -2,99 +2,126 @@
 //  Font.swift
 //  SwiftUITemplate
 //
-//  Created by Vsevolod on 01.04.2023.
+//  Created by Vsevolod on 26.03.2023.
 //
 
 import SwiftUI
+import CustomFont
 
-struct CustomFont {
-    static func custom(_ customTextStyle: CustomTextStyle) -> CustomFont {
-        CustomFont(customTextStyle: customTextStyle)
-    }
-    
-    private let customTextStyle: CustomTextStyle
-    
-    fileprivate func callAsFunction(_ legibilityWeight: LegibilityWeight?) -> Font {
-        customTextStyle(legibilityWeight)
-    }
+extension CustomTextStyle {
+    static let hugeTitleFixed = CustomTextStyle(Barlow.semiBold, fixedSize: 36)
+    static let hugeTitle = CustomTextStyle(Barlow.semiBold, size: 36, relativeTo: .largeTitle)
+    static let largeTitle = CustomTextStyle(Copperplate.light, size: 34, relativeTo: .largeTitle)
+    static let largeTitle2 = CustomTextStyle(Barlow.semiBold, size: 32, relativeTo: .largeTitle)
+    static let title = CustomTextStyle(NewYorkExtraLarge.semiBold, size: 28, relativeTo: .title)
+    static let title2 = CustomTextStyle(Barlow.thin, size: 22, relativeTo: .title2)
+    static let title3 = CustomTextStyle(Barlow.thin, size: 20, relativeTo: .title3)
+    static let headline = CustomTextStyle(Barlow.semiBold, size: 17, relativeTo: .headline)
+    static let body = CustomTextStyle(Barlow.regular, size: 17)
+    static let body2 = CustomTextStyle(Barlow.thin, size: 17)
+    static let callout = CustomTextStyle(NewYorkExtraLarge.semiBold, size: 16, relativeTo: .callout)
+    static let subheadline = CustomTextStyle(DancingScript.regular, size: 15, relativeTo: .subheadline)
+    static let footnote = CustomTextStyle(DancingScript.medium, size: 13, relativeTo: .footnote)
+    static let caption = CustomTextStyle(DancingScript.regular, size: 12, relativeTo: .caption)
+    static let caption2 = CustomTextStyle(DancingScript.medium, size: 11, relativeTo: .caption2)
+#if os(macOS)
+    static let caption3 =  CustomTextStyle(NewYorkExtraLarge.semiBold, size: 10, relativeTo: .caption2)
+#else
+    static let caption3 =  CustomTextStyle(NewYorkExtraLarge.semiBold, size: 10, relativeTo: .caption2)
+#endif
 }
 
-struct CustomTextStyle {
-    private let fontFamily: FontFamily
-    private let size: CGFloat
-    private let textStyle: Font.TextStyle?
+// Add bolder fonts for legibilityWeight in addition to those used.
+// Don't add cases for italic fonts, use the .italic() view modifier instead.
+fileprivate enum Barlow: String, CaseIterable, FontFamily {
+    static let baseName = "Barlow-"
     
-    init(_ fontFamily: FontFamily, size: CGFloat, relativeTo textStyle: Font.TextStyle = .body) {
-        self.fontFamily = fontFamily
-        self.size = size
-        self.textStyle = textStyle
-    }
-    
-    init(_ fontFamily: FontFamily, fixedSize: CGFloat) {
-        self.fontFamily = fontFamily
-        self.size = fixedSize
-        self.textStyle = nil
-    }
-    
-    fileprivate func callAsFunction(_ legibilityWeight: LegibilityWeight?) -> Font {
-        let fontFamily: FontFamily
-        switch legibilityWeight {
-        case .bold:
-            fontFamily = self.fontFamily.bolder
-        default:
-            fontFamily = self.fontFamily
-        }
-        
-        if let textStyle = textStyle {
-            return .custom(fontFamily.name, size: size, relativeTo: textStyle)
-        }
-        return .custom(fontFamily.name, fixedSize: size)
-    }
+    case thin, extraLight, regular, medium, semiBold, bold
 }
 
-protocol FontFamily {
-    static var baseName: String { get }
+fileprivate enum DancingScript: String, CaseIterable, FontFamily {
+    static let baseName = "DancingScript-"
     
-    var name: String { get }
-    var bolder: Self { get }
+    case regular, medium, semiBold
 }
 
-extension FontFamily where Self: Equatable,
-                           Self: RawRepresentable<String>,
-                           Self: CaseIterable,
-                           AllCases == [Self] {
-    var name: String {
-        Self.baseName + rawValue
-    }
+fileprivate enum NewYorkExtraLarge: String, CaseIterable, FontFamily {
+    static let baseName = "NewYorkExtraLarge-"
     
-    var bolder: Self {
-        let allCases = Self.allCases
-        
-        guard self != allCases.last,
-              let firstIndex = allCases.firstIndex(of: self)
-        else { return self }
-        
-        return allCases[firstIndex + 1]
-    }
+    case semiBold, bold
 }
 
-extension Text {
-    func font(_ customFont: CustomFont, consider legibilityWeight: LegibilityWeight?) -> Text {
-        self.font(customFont(legibilityWeight))
-    }
+fileprivate enum Copperplate: String, CaseIterable, FontFamily {
+    static let baseName = "Copperplate"
+    
+    case light = "-Light", regular = ""
 }
 
-extension View {
-    func font(_ customFont: CustomFont) -> some View {
-        modifier(FontViewModifier(customFont: customFont))
-    }
-}
-
-struct FontViewModifier: ViewModifier {
+struct FontView: View {
     @Environment(\.legibilityWeight) private var legibilityWeight
-    let customFont: CustomFont
     
-    func body(content: Content) -> some View {
-        content.font(customFont(legibilityWeight))
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading) {
+                VStack(alignment: .leading) {
+                    Text("Hello World!")
+                        .font(.custom(.hugeTitle))
+                    Text("Hello World!")
+                        .font(.custom(.largeTitle))
+                    Text("Hello World!")
+                        .font(.custom(.largeTitle2))
+                    Text("Hello World!")
+                        .font(.custom(.title))
+                    Text("Hello World!")
+                        .font(.custom(.title2))
+                    Text("Hello World!")
+                        .font(.custom(.title3))
+                    Text("Hello World!")
+                        .font(.custom(.headline))
+                    Text("Hello World!")
+                        .font(.custom(.body))
+                    Text("Hello World!")
+                        .font(.custom(.body2))
+                }
+                VStack(alignment: .leading) {
+                    Text("Hello World!")
+                        .font(.custom(.callout))
+                    Text("Hello World!")
+                        .font(.custom(.subheadline))
+                    Text("Hello World!")
+                        .font(.custom(.footnote))
+                    Text("Hello World!")
+                        .font(.custom(.caption))
+                    Text("Hell.custom(o World!")
+                        .font(.custom(.caption2))
+                    Text("Hello World!")
+                        .font(.custom(.caption3))
+                }
+                VStack(alignment: .leading) {
+                    Text("Hello World!")
+                        .font(.custom(.hugeTitle))
+                    Text("Hello World!")
+                        .font(.custom(.hugeTitleFixed))
+                    Text("Hello World!")
+                        .font(.custom(.title3))
+                        .bold()
+                        .italic()
+                    Text("Hello World!")
+                        .font(.custom(.hugeTitle))
+                        .italic()
+                    Text("Hello ")
+                        .font(.custom(.hugeTitle), consider: legibilityWeight)
+                        .italic() +
+                    Text("World!")
+                        .font(.custom(.caption), consider: legibilityWeight)
+                }
+            }
+        }
+    }
+}
+
+struct Font_Previews: PreviewProvider {
+    static var previews: some View {
+        FontView()
     }
 }

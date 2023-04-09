@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/vsevolod19860507/CustomFont",
       "state" : {
-        "revision" : "fe6f10a03451813e0f278c62eb31f71ca6883926",
-        "version" : "1.3.1"
+        "revision" : "01c885ce04b9cc27260e1072ecf8b8fced0e8c2b",
+        "version" : "1.3.2"
       }
     }
   ],

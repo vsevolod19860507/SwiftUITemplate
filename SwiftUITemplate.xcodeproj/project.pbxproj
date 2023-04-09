@@ -7,60 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72603ACC29E313F70078A8A3 /* DancingScript-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72603ABD29E313F70078A8A3 /* DancingScript-Bold.ttf */; };
+		72603ACD29E313F70078A8A3 /* NewYorkExtraLarge-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 72603ABF29E313F70078A8A3 /* NewYorkExtraLarge-Bold.otf */; };
+		72603ACE29E313F70078A8A3 /* NewYorkExtraLarge-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 72603AC029E313F70078A8A3 /* NewYorkExtraLarge-Semibold.otf */; };
+		72603ACF29E313F70078A8A3 /* NewYorkExtraLarge-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 72603AC129E313F70078A8A3 /* NewYorkExtraLarge-BoldItalic.otf */; };
+		72603AD029E313F70078A8A3 /* NewYorkExtraLarge-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 72603AC229E313F70078A8A3 /* NewYorkExtraLarge-SemiboldItalic.otf */; };
+		72603AD129E313F70078A8A3 /* Barlow-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72603AC429E313F70078A8A3 /* Barlow-ExtraLight.ttf */; };
+		72603AD229E313F70078A8A3 /* Barlow-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72603AC529E313F70078A8A3 /* Barlow-ThinItalic.ttf */; };
+		72603AD329E313F70078A8A3 /* Barlow-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72603AC629E313F70078A8A3 /* Barlow-MediumItalic.ttf */; };
+		72603AD429E313F70078A8A3 /* Barlow-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72603AC729E313F70078A8A3 /* Barlow-Italic.ttf */; };
+		72603AD529E313F70078A8A3 /* Barlow-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72603AC829E313F70078A8A3 /* Barlow-ExtraLightItalic.ttf */; };
+		72603AD629E313F70078A8A3 /* Barlow-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72603AC929E313F70078A8A3 /* Barlow-Thin.ttf */; };
+		72603AD729E313F70078A8A3 /* Barlow-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72603ACA29E313F70078A8A3 /* Barlow-Medium.ttf */; };
+		72603AD829E313F70078A8A3 /* Barlow-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72603ACB29E313F70078A8A3 /* Barlow-Regular.ttf */; };
 		72F7C63829D8B17F00E2E07E /* CustomFont in Frameworks */ = {isa = PBXBuildFile; productRef = 72F7C63729D8B17F00E2E07E /* CustomFont */; };
 		72FA6C9929D81EB800747FEF /* SwiftUITemplateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FA6C9829D81EB800747FEF /* SwiftUITemplateApp.swift */; };
 		72FA6C9B29D81EB800747FEF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FA6C9A29D81EB800747FEF /* ContentView.swift */; };
 		72FA6C9D29D81EB800747FEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72FA6C9C29D81EB800747FEF /* Assets.xcassets */; };
 		72FA6CA029D81EB800747FEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72FA6C9F29D81EB800747FEF /* Preview Assets.xcassets */; };
-		72FA6CC029D81F1800747FEF /* DancingScript-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72FA6CAA29D81F1800747FEF /* DancingScript-Medium.ttf */; };
-		72FA6CC129D81F1800747FEF /* DancingScript-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72FA6CAB29D81F1800747FEF /* DancingScript-Regular.ttf */; };
-		72FA6CC229D81F1800747FEF /* DancingScript-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72FA6CAC29D81F1800747FEF /* DancingScript-SemiBold.ttf */; };
-		72FA6CC329D81F1800747FEF /* NewYorkExtraLarge-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 72FA6CAE29D81F1800747FEF /* NewYorkExtraLarge-Bold.otf */; };
-		72FA6CC429D81F1800747FEF /* NewYorkExtraLarge-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 72FA6CAF29D81F1800747FEF /* NewYorkExtraLarge-Semibold.otf */; };
-		72FA6CC529D81F1800747FEF /* NewYorkExtraLarge-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 72FA6CB029D81F1800747FEF /* NewYorkExtraLarge-BoldItalic.otf */; };
-		72FA6CC629D81F1800747FEF /* NewYorkExtraLarge-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 72FA6CB129D81F1800747FEF /* NewYorkExtraLarge-SemiboldItalic.otf */; };
-		72FA6CC729D81F1800747FEF /* Barlow-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72FA6CB329D81F1800747FEF /* Barlow-SemiBoldItalic.ttf */; };
-		72FA6CC829D81F1800747FEF /* Barlow-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72FA6CB429D81F1800747FEF /* Barlow-BoldItalic.ttf */; };
-		72FA6CC929D81F1800747FEF /* Barlow-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72FA6CB529D81F1800747FEF /* Barlow-ExtraLight.ttf */; };
-		72FA6CCA29D81F1800747FEF /* Barlow-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72FA6CB629D81F1800747FEF /* Barlow-ThinItalic.ttf */; };
-		72FA6CCB29D81F1800747FEF /* Barlow-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72FA6CB729D81F1800747FEF /* Barlow-MediumItalic.ttf */; };
-		72FA6CCC29D81F1800747FEF /* Barlow-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72FA6CB829D81F1800747FEF /* Barlow-Italic.ttf */; };
-		72FA6CCD29D81F1800747FEF /* Barlow-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72FA6CB929D81F1800747FEF /* Barlow-ExtraLightItalic.ttf */; };
-		72FA6CCE29D81F1800747FEF /* Barlow-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72FA6CBA29D81F1800747FEF /* Barlow-Thin.ttf */; };
-		72FA6CCF29D81F1800747FEF /* Barlow-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72FA6CBB29D81F1800747FEF /* Barlow-LightItalic.ttf */; };
-		72FA6CD029D81F1800747FEF /* Barlow-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72FA6CBC29D81F1800747FEF /* Barlow-Bold.ttf */; };
-		72FA6CD129D81F1800747FEF /* Barlow-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72FA6CBD29D81F1800747FEF /* Barlow-Medium.ttf */; };
-		72FA6CD229D81F1800747FEF /* Barlow-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72FA6CBE29D81F1800747FEF /* Barlow-Regular.ttf */; };
-		72FA6CD329D81F1800747FEF /* Barlow-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72FA6CBF29D81F1800747FEF /* Barlow-SemiBold.ttf */; };
 		72FA6CD629D8599C00747FEF /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FA6CD529D8599C00747FEF /* Font.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		72603ABD29E313F70078A8A3 /* DancingScript-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-Bold.ttf"; sourceTree = "<group>"; };
+		72603ABF29E313F70078A8A3 /* NewYorkExtraLarge-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkExtraLarge-Bold.otf"; sourceTree = "<group>"; };
+		72603AC029E313F70078A8A3 /* NewYorkExtraLarge-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkExtraLarge-Semibold.otf"; sourceTree = "<group>"; };
+		72603AC129E313F70078A8A3 /* NewYorkExtraLarge-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkExtraLarge-BoldItalic.otf"; sourceTree = "<group>"; };
+		72603AC229E313F70078A8A3 /* NewYorkExtraLarge-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkExtraLarge-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		72603AC429E313F70078A8A3 /* Barlow-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-ExtraLight.ttf"; sourceTree = "<group>"; };
+		72603AC529E313F70078A8A3 /* Barlow-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-ThinItalic.ttf"; sourceTree = "<group>"; };
+		72603AC629E313F70078A8A3 /* Barlow-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-MediumItalic.ttf"; sourceTree = "<group>"; };
+		72603AC729E313F70078A8A3 /* Barlow-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Italic.ttf"; sourceTree = "<group>"; };
+		72603AC829E313F70078A8A3 /* Barlow-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		72603AC929E313F70078A8A3 /* Barlow-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Thin.ttf"; sourceTree = "<group>"; };
+		72603ACA29E313F70078A8A3 /* Barlow-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Medium.ttf"; sourceTree = "<group>"; };
+		72603ACB29E313F70078A8A3 /* Barlow-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Regular.ttf"; sourceTree = "<group>"; };
 		72FA6C9529D81EB800747FEF /* SwiftUITemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72FA6C9829D81EB800747FEF /* SwiftUITemplateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITemplateApp.swift; sourceTree = "<group>"; };
 		72FA6C9A29D81EB800747FEF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		72FA6C9C29D81EB800747FEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72FA6C9F29D81EB800747FEF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		72FA6CAA29D81F1800747FEF /* DancingScript-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-Medium.ttf"; sourceTree = "<group>"; };
-		72FA6CAB29D81F1800747FEF /* DancingScript-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-Regular.ttf"; sourceTree = "<group>"; };
-		72FA6CAC29D81F1800747FEF /* DancingScript-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-SemiBold.ttf"; sourceTree = "<group>"; };
-		72FA6CAE29D81F1800747FEF /* NewYorkExtraLarge-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkExtraLarge-Bold.otf"; sourceTree = "<group>"; };
-		72FA6CAF29D81F1800747FEF /* NewYorkExtraLarge-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkExtraLarge-Semibold.otf"; sourceTree = "<group>"; };
-		72FA6CB029D81F1800747FEF /* NewYorkExtraLarge-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkExtraLarge-BoldItalic.otf"; sourceTree = "<group>"; };
-		72FA6CB129D81F1800747FEF /* NewYorkExtraLarge-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkExtraLarge-SemiboldItalic.otf"; sourceTree = "<group>"; };
-		72FA6CB329D81F1800747FEF /* Barlow-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
-		72FA6CB429D81F1800747FEF /* Barlow-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-BoldItalic.ttf"; sourceTree = "<group>"; };
-		72FA6CB529D81F1800747FEF /* Barlow-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-ExtraLight.ttf"; sourceTree = "<group>"; };
-		72FA6CB629D81F1800747FEF /* Barlow-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-ThinItalic.ttf"; sourceTree = "<group>"; };
-		72FA6CB729D81F1800747FEF /* Barlow-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-MediumItalic.ttf"; sourceTree = "<group>"; };
-		72FA6CB829D81F1800747FEF /* Barlow-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Italic.ttf"; sourceTree = "<group>"; };
-		72FA6CB929D81F1800747FEF /* Barlow-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
-		72FA6CBA29D81F1800747FEF /* Barlow-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Thin.ttf"; sourceTree = "<group>"; };
-		72FA6CBB29D81F1800747FEF /* Barlow-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-LightItalic.ttf"; sourceTree = "<group>"; };
-		72FA6CBC29D81F1800747FEF /* Barlow-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Bold.ttf"; sourceTree = "<group>"; };
-		72FA6CBD29D81F1800747FEF /* Barlow-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Medium.ttf"; sourceTree = "<group>"; };
-		72FA6CBE29D81F1800747FEF /* Barlow-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Regular.ttf"; sourceTree = "<group>"; };
-		72FA6CBF29D81F1800747FEF /* Barlow-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-SemiBold.ttf"; sourceTree = "<group>"; };
 		72FA6CD429D81F4300747FEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		72FA6CD529D8599C00747FEF /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +63,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		72603ABB29E313F70078A8A3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				72603ABC29E313F70078A8A3 /* DancingScript */,
+				72603ABE29E313F70078A8A3 /* NewYorkExtraLarge */,
+				72603AC329E313F70078A8A3 /* Barlow */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		72603ABC29E313F70078A8A3 /* DancingScript */ = {
+			isa = PBXGroup;
+			children = (
+				72603ABD29E313F70078A8A3 /* DancingScript-Bold.ttf */,
+			);
+			path = DancingScript;
+			sourceTree = "<group>";
+		};
+		72603ABE29E313F70078A8A3 /* NewYorkExtraLarge */ = {
+			isa = PBXGroup;
+			children = (
+				72603ABF29E313F70078A8A3 /* NewYorkExtraLarge-Bold.otf */,
+				72603AC029E313F70078A8A3 /* NewYorkExtraLarge-Semibold.otf */,
+				72603AC129E313F70078A8A3 /* NewYorkExtraLarge-BoldItalic.otf */,
+				72603AC229E313F70078A8A3 /* NewYorkExtraLarge-SemiboldItalic.otf */,
+			);
+			path = NewYorkExtraLarge;
+			sourceTree = "<group>";
+		};
+		72603AC329E313F70078A8A3 /* Barlow */ = {
+			isa = PBXGroup;
+			children = (
+				72603AC429E313F70078A8A3 /* Barlow-ExtraLight.ttf */,
+				72603AC529E313F70078A8A3 /* Barlow-ThinItalic.ttf */,
+				72603AC629E313F70078A8A3 /* Barlow-MediumItalic.ttf */,
+				72603AC729E313F70078A8A3 /* Barlow-Italic.ttf */,
+				72603AC829E313F70078A8A3 /* Barlow-ExtraLightItalic.ttf */,
+				72603AC929E313F70078A8A3 /* Barlow-Thin.ttf */,
+				72603ACA29E313F70078A8A3 /* Barlow-Medium.ttf */,
+				72603ACB29E313F70078A8A3 /* Barlow-Regular.ttf */,
+			);
+			path = Barlow;
+			sourceTree = "<group>";
+		};
 		72FA6C8C29D81EB800747FEF = {
 			isa = PBXGroup;
 			children = (
@@ -101,7 +131,7 @@
 				72FA6C9A29D81EB800747FEF /* ContentView.swift */,
 				72FA6CD529D8599C00747FEF /* Font.swift */,
 				72FA6C9C29D81EB800747FEF /* Assets.xcassets */,
-				72FA6CA829D81F1800747FEF /* Fonts */,
+				72603ABB29E313F70078A8A3 /* Fonts */,
 				72FA6C9E29D81EB800747FEF /* Preview Content */,
 			);
 			path = SwiftUITemplate;
@@ -113,57 +143,6 @@
 				72FA6C9F29D81EB800747FEF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		72FA6CA829D81F1800747FEF /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				72FA6CA929D81F1800747FEF /* DancingScript */,
-				72FA6CAD29D81F1800747FEF /* NewYorkExtraLarge */,
-				72FA6CB229D81F1800747FEF /* Barlow */,
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
-		72FA6CA929D81F1800747FEF /* DancingScript */ = {
-			isa = PBXGroup;
-			children = (
-				72FA6CAA29D81F1800747FEF /* DancingScript-Medium.ttf */,
-				72FA6CAB29D81F1800747FEF /* DancingScript-Regular.ttf */,
-				72FA6CAC29D81F1800747FEF /* DancingScript-SemiBold.ttf */,
-			);
-			path = DancingScript;
-			sourceTree = "<group>";
-		};
-		72FA6CAD29D81F1800747FEF /* NewYorkExtraLarge */ = {
-			isa = PBXGroup;
-			children = (
-				72FA6CAE29D81F1800747FEF /* NewYorkExtraLarge-Bold.otf */,
-				72FA6CAF29D81F1800747FEF /* NewYorkExtraLarge-Semibold.otf */,
-				72FA6CB029D81F1800747FEF /* NewYorkExtraLarge-BoldItalic.otf */,
-				72FA6CB129D81F1800747FEF /* NewYorkExtraLarge-SemiboldItalic.otf */,
-			);
-			path = NewYorkExtraLarge;
-			sourceTree = "<group>";
-		};
-		72FA6CB229D81F1800747FEF /* Barlow */ = {
-			isa = PBXGroup;
-			children = (
-				72FA6CB329D81F1800747FEF /* Barlow-SemiBoldItalic.ttf */,
-				72FA6CB429D81F1800747FEF /* Barlow-BoldItalic.ttf */,
-				72FA6CB529D81F1800747FEF /* Barlow-ExtraLight.ttf */,
-				72FA6CB629D81F1800747FEF /* Barlow-ThinItalic.ttf */,
-				72FA6CB729D81F1800747FEF /* Barlow-MediumItalic.ttf */,
-				72FA6CB829D81F1800747FEF /* Barlow-Italic.ttf */,
-				72FA6CB929D81F1800747FEF /* Barlow-ExtraLightItalic.ttf */,
-				72FA6CBA29D81F1800747FEF /* Barlow-Thin.ttf */,
-				72FA6CBB29D81F1800747FEF /* Barlow-LightItalic.ttf */,
-				72FA6CBC29D81F1800747FEF /* Barlow-Bold.ttf */,
-				72FA6CBD29D81F1800747FEF /* Barlow-Medium.ttf */,
-				72FA6CBE29D81F1800747FEF /* Barlow-Regular.ttf */,
-				72FA6CBF29D81F1800747FEF /* Barlow-SemiBold.ttf */,
-			);
-			path = Barlow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,28 +209,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72FA6CC429D81F1800747FEF /* NewYorkExtraLarge-Semibold.otf in Resources */,
-				72FA6CC629D81F1800747FEF /* NewYorkExtraLarge-SemiboldItalic.otf in Resources */,
-				72FA6CCC29D81F1800747FEF /* Barlow-Italic.ttf in Resources */,
-				72FA6CC829D81F1800747FEF /* Barlow-BoldItalic.ttf in Resources */,
-				72FA6CC029D81F1800747FEF /* DancingScript-Medium.ttf in Resources */,
-				72FA6CCE29D81F1800747FEF /* Barlow-Thin.ttf in Resources */,
-				72FA6CD129D81F1800747FEF /* Barlow-Medium.ttf in Resources */,
-				72FA6CCF29D81F1800747FEF /* Barlow-LightItalic.ttf in Resources */,
-				72FA6CCB29D81F1800747FEF /* Barlow-MediumItalic.ttf in Resources */,
-				72FA6CC529D81F1800747FEF /* NewYorkExtraLarge-BoldItalic.otf in Resources */,
-				72FA6CC929D81F1800747FEF /* Barlow-ExtraLight.ttf in Resources */,
-				72FA6CC329D81F1800747FEF /* NewYorkExtraLarge-Bold.otf in Resources */,
-				72FA6CC129D81F1800747FEF /* DancingScript-Regular.ttf in Resources */,
-				72FA6CD229D81F1800747FEF /* Barlow-Regular.ttf in Resources */,
-				72FA6CCA29D81F1800747FEF /* Barlow-ThinItalic.ttf in Resources */,
-				72FA6CD029D81F1800747FEF /* Barlow-Bold.ttf in Resources */,
-				72FA6CC729D81F1800747FEF /* Barlow-SemiBoldItalic.ttf in Resources */,
-				72FA6CC229D81F1800747FEF /* DancingScript-SemiBold.ttf in Resources */,
-				72FA6CCD29D81F1800747FEF /* Barlow-ExtraLightItalic.ttf in Resources */,
+				72603AD629E313F70078A8A3 /* Barlow-Thin.ttf in Resources */,
+				72603AD429E313F70078A8A3 /* Barlow-Italic.ttf in Resources */,
+				72603AD729E313F70078A8A3 /* Barlow-Medium.ttf in Resources */,
+				72603ACC29E313F70078A8A3 /* DancingScript-Bold.ttf in Resources */,
+				72603AD129E313F70078A8A3 /* Barlow-ExtraLight.ttf in Resources */,
+				72603ACD29E313F70078A8A3 /* NewYorkExtraLarge-Bold.otf in Resources */,
+				72603ACF29E313F70078A8A3 /* NewYorkExtraLarge-BoldItalic.otf in Resources */,
+				72603AD829E313F70078A8A3 /* Barlow-Regular.ttf in Resources */,
 				72FA6CA029D81EB800747FEF /* Preview Assets.xcassets in Resources */,
-				72FA6CD329D81F1800747FEF /* Barlow-SemiBold.ttf in Resources */,
+				72603AD029E313F70078A8A3 /* NewYorkExtraLarge-SemiboldItalic.otf in Resources */,
+				72603ACE29E313F70078A8A3 /* NewYorkExtraLarge-Semibold.otf in Resources */,
 				72FA6C9D29D81EB800747FEF /* Assets.xcassets in Resources */,
+				72603AD529E313F70078A8A3 /* Barlow-ExtraLightItalic.ttf in Resources */,
+				72603AD329E313F70078A8A3 /* Barlow-MediumItalic.ttf in Resources */,
+				72603AD229E313F70078A8A3 /* Barlow-ThinItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
